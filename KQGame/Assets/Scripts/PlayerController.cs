@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // SALTO
-        if (OnFloor() && Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump") )
+        if (OnFloor() && (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump") ))
         {
             Debug.Log("El jugador esta en el piso intentando saltar...");
 
